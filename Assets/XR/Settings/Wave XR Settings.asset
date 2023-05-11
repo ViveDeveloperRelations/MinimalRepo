@@ -57,5 +57,5 @@ MonoBehaviour:
   EnableEyeTracking: 0
   EnableEyeExpression: 0
   EnableLipExpression: 0
-  EnableScenePerception: 0
-  EnableSceneMesh: 0
+  EnableScenePerception: 1
+  EnableSceneMesh: 1
