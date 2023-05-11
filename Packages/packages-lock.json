@@ -1,32 +1,29 @@
 {
   "dependencies": {
     "com.htc.upm.wave.essence": {
-      "version": "5.2.1-r.1",
+      "version": "file:G:/vivestudios/log/SDK521r51/com.htc.upm.wave.essence-5.2.1-r.5.1.tgz",
       "depth": 0,
-      "source": "registry",
+      "source": "local-tarball",
       "dependencies": {
-        "com.htc.upm.wave.xrsdk": "5.2.1-r.1",
-        "com.htc.upm.wave.native": "5.2.1-r.1"
-      },
-      "url": "https://npm-registry.vive.com"
+        "com.htc.upm.wave.xrsdk": "5.2.1-r.5.1",
+        "com.htc.upm.wave.native": "5.2.1-r.5.1"
+      }
     },
     "com.htc.upm.wave.native": {
-      "version": "5.2.1-r.1",
-      "depth": 1,
-      "source": "registry",
+      "version": "file:G:/vivestudios/log/SDK521r51/com.htc.upm.wave.native-5.2.1-r.5.1.tgz",
+      "depth": 0,
+      "source": "local-tarball",
       "dependencies": {
-        "com.htc.upm.wave.xrsdk": "5.2.1-r.1"
-      },
-      "url": "https://npm-registry.vive.com"
+        "com.htc.upm.wave.xrsdk": "5.2.1-r.5.1"
+      }
     },
     "com.htc.upm.wave.xrsdk": {
-      "version": "5.2.1-r.1",
-      "depth": 1,
-      "source": "registry",
+      "version": "file:G:/vivestudios/log/SDK521r51/com.htc.upm.wave.xrsdk-5.2.1-r.5.1.tgz",
+      "depth": 0,
+      "source": "local-tarball",
       "dependencies": {
         "com.unity.xr.management": "3.2.4"
-      },
-      "url": "https://npm-registry.vive.com"
+      }
     },
     "com.unity.collab-proxy": {
       "version": "2.0.1",

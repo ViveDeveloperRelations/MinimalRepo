@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Wave/Essence/ScenePerception/5.2.1-r.1/Demo/Scenes/ScenePerceptionDemo(SceneMeshAnchor).unity
+    guid: eed64361c898e114f905a896aabb91ea
+  - enabled: 1
     path: Assets/blank.unity
     guid: 8c208ae12909efa49bb9fc9bb65b9d3c
   m_configObjects:

@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "com.htc.upm.wave.essence": "5.2.1-r.1",
-    "com.htc.upm.wave.xrsdk": "5.2.0-r.8",
+    "com.htc.upm.wave.essence": "file:G:/vivestudios/log/SDK521r51/com.htc.upm.wave.essence-5.2.1-r.5.1.tgz",
+    "com.htc.upm.wave.native": "file:G:/vivestudios/log/SDK521r51/com.htc.upm.wave.native-5.2.1-r.5.1.tgz",
+    "com.htc.upm.wave.xrsdk": "file:G:/vivestudios/log/SDK521r51/com.htc.upm.wave.xrsdk-5.2.1-r.5.1.tgz",
     "com.unity.collab-proxy": "2.0.1",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.18",
