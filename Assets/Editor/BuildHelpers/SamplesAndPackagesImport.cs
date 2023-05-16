@@ -32,7 +32,7 @@ namespace BuildHelpers
                         continue;
                     }
 
-                    var files = Directory.GetFiles(directoryPath, "*.unitypackage");
+                    var files = Directory.GetFiles(directoryPath, "*.unitypackage",SearchOption.AllDirectories);
                     foreach (var file in files)
                     {
                         AssetDatabase.ImportPackage(file, interactive:false);
