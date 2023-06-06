@@ -9,7 +9,19 @@ namespace BuildHelpers
 {
     public class SamplesAndPackagesImport
     {
-
+        [MenuItem("TestBuilder/Import package from command line by name")]
+        public static void ImportPackageFromCommandLine()
+        {
+            var customArgsString = BuildHelperCLI.GetCustomArgsString();
+            var arguments = BuildHelperCLI.ParseCustomParamsString(customArgsString);
+            string packageName = arguments["packageName"];
+            CLIPackManagerImporter.ImportPackage(packageName,quitOnFinish: true);
+        }
+        [MenuItem("TestBuilder/Package Import Input system")]
+        public static void TestImportInputSystem()
+        {
+            CLIPackManagerImporter.ImportPackage("com.unity.inputsystem",quitOnFinish: true);
+        }
         public static void ImportAllSamplesAndUnityPackages()
         {
             var packageNames = new[]

@@ -24,7 +24,7 @@ namespace BuildHelpers
                 if (addRequest.Status == StatusCode.Failure)
                 {
                     Debug.LogError("Failed to add package " + packageManagerCompatibleURL);
-                    ;
+                    
                     Debug.LogError(addRequest.Error.message);
                     return;
                 }
