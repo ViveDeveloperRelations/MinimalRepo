@@ -7,12 +7,8 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Samples/VIVE OpenXR ToolKit Samples - Android/1.0.5/VIVE OpenXR
-      Toolkit Samples/HandTracking/HandTrackingSample.unity
-    guid: 6bae71f48391bf444a2489a7329f3456
-  - enabled: 1
-    path: Assets/Samples/VIVE OpenXR ToolKit Samples - Android/1.0.5/VIVE OpenXR
-      Toolkit Samples/HandTracking/HandInteractionSample.unity
-    guid: 197033d17ca734640b4ca8225d6c3ece
+      Toolkit Samples/Input/OpenXRInput.unity
+    guid: 418af9d52d7202848b69e0f8a9afe5b5
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7e6d36b5d46fab048a38733bfb5d0d40, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: c234fefaea4c3344aa41f6fa50d25cd8, type: 2}
