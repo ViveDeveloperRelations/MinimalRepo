@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/blank.unity
-    guid: 8c208ae12909efa49bb9fc9bb65b9d3c
+    path: Assets/Samples/VIVE Wave XR Plugin/5.3.1-r.2/XR/Controller/ControllerSample.unity
+    guid: edb91e86bd8b7dc4ca40ad6c3167de73
   m_configObjects:
     com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: 36f78858ffbde4a45a0c37866f3a9e33, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6a9100c7ac6b3464e80f61d04c6bb4a1, type: 2}
