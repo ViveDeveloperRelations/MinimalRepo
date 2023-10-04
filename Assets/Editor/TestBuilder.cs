@@ -23,6 +23,7 @@ public class TestBuilder
                     BundleIdentifier = "com.defaultCompany.minimalsetup" +buildNumberFaked+ Application.unityVersion.Replace(".","_"),
                 };
             BuildInternal(buildConfig);
+            
         }
 
         [MenuItem("TestBuilder/TestBuild No Version update")]
