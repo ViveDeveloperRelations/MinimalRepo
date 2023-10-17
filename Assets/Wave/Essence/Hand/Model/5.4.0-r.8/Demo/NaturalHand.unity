@@ -26,11 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-<<<<<<<< HEAD:Assets/Wave/Essence/Hand/Model/5.3.1-r.2/Demo/NaturalHand.unity
-  m_SkyboxMaterial: {fileID: 2100000, guid: eb984238b61fdfe4f9d346c51c009382, type: 2}
-========
   m_SkyboxMaterial: {fileID: 2100000, guid: 91dafd6c796d08044b832631254f2a21, type: 2}
->>>>>>>> wave:Assets/Wave/Essence/Hand/Model/5.4.0-r.8/Demo/NaturalHand.unity
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -234,8 +230,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48219329}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<<< HEAD:Assets/Wave/Essence/Hand/Model/5.3.1-r.2/Demo/NaturalHand.unity
-========
 --- !u!1 &58814014
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +331,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
->>>>>>>> wave:Assets/Wave/Essence/Hand/Model/5.4.0-r.8/Demo/NaturalHand.unity
 --- !u!1 &106558518
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,10 +607,7 @@ Transform:
   - {fileID: 501589088}
   - {fileID: 1095412411}
   - {fileID: 2043745291}
-<<<<<<<< HEAD:Assets/Wave/Essence/Hand/Model/5.3.1-r.2/Demo/NaturalHand.unity
-========
   - {fileID: 58814015}
->>>>>>>> wave:Assets/Wave/Essence/Hand/Model/5.4.0-r.8/Demo/NaturalHand.unity
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -899,15 +889,8 @@ MonoBehaviour:
   m_TrackerOptions:
     Tracker: 1
     Natural:
-<<<<<<<< HEAD:Assets/Wave/Essence/Hand/Model/5.3.1-r.2/Demo/NaturalHand.unity
-      Enable: 1
       InitialStart: 1
     Electronic:
-      Enable: 1
-========
-      InitialStart: 1
-    Electronic:
->>>>>>>> wave:Assets/Wave/Essence/Hand/Model/5.4.0-r.8/Demo/NaturalHand.unity
       InitialStart: 0
       Model: 1
 --- !u!4 &167772623
@@ -2275,8 +2258,6 @@ MonoBehaviour:
   m_TargetBone: {fileID: 201894873}
   m_FingerWidth: 0.001
   m_FingerColor: {r: 1, g: 0, b: 0, a: 1}
-<<<<<<<< HEAD:Assets/Wave/Essence/Hand/Model/5.3.1-r.2/Demo/NaturalHand.unity
-========
 --- !u!1 &365619513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,7 +2350,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365619513}
   m_CullTransparentMesh: 0
->>>>>>>> wave:Assets/Wave/Essence/Hand/Model/5.4.0-r.8/Demo/NaturalHand.unity
 --- !u!1 &381006600
 GameObject:
   m_ObjectHideFlags: 0
@@ -4898,8 +4878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f64d98df731514babf675cecd128f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<<< HEAD:Assets/Wave/Essence/Hand/Model/5.3.1-r.2/Demo/NaturalHand.unity
-========
 --- !u!1 &750136431
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,7 +4952,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750136431}
   m_CullTransparentMesh: 0
->>>>>>>> wave:Assets/Wave/Essence/Hand/Model/5.4.0-r.8/Demo/NaturalHand.unity
 --- !u!1 &777032669
 GameObject:
   m_ObjectHideFlags: 0
@@ -7325,8 +7302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c639368b8f12b74dad72acdf0f16659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<<< HEAD:Assets/Wave/Essence/Hand/Model/5.3.1-r.2/Demo/NaturalHand.unity
-========
 --- !u!1 &1222924062
 GameObject:
   m_ObjectHideFlags: 0
@@ -7419,7 +7394,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222924062}
   m_CullTransparentMesh: 0
->>>>>>>> wave:Assets/Wave/Essence/Hand/Model/5.4.0-r.8/Demo/NaturalHand.unity
 --- !u!1 &1261185468
 GameObject:
   m_ObjectHideFlags: 0
