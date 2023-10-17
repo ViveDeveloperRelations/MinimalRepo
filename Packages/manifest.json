@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "com.htc.upm.wave.openxr.toolkit.samples": "1.0.5",
+    "com.htc.upm.wave.openxr": "https://github.com/ViveSoftware/VIVE-OpenXR-AIO.git?path=com.htc.upm.wave.openxr",
+    "com.htc.upm.wave.openxr.toolkit": "https://github.com/ViveSoftware/VIVE-OpenXR-AIO.git?path=com.htc.upm.wave.openxr.toolkit",
+    "com.htc.upm.wave.openxr.toolkit.samples": "https://github.com/ViveSoftware/VIVE-OpenXR-AIO.git?path=com.htc.upm.wave.openxr.toolkit.samples",
     "com.unity.collab-proxy": "2.0.1",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.18",
