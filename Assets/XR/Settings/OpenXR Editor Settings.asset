@@ -16,3 +16,4 @@ MonoBehaviour:
   Values:
   - featureSets:
     - com.htc.wave.openxr.featureset.vivexr
+    - com.htc.vive.openxr.featureset.vivexr
