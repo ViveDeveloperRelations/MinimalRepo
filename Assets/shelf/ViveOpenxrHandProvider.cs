@@ -1,3 +1,4 @@
+#if ASINK_TEST
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -74,8 +75,9 @@ class ViveOpenxrHandProvider : XRHandSubsystemProvider
         
          viveHands.GetJointLocations(isLeft: true, handJointLocation: out XrHandJointLocationEXT[] handJointLocationLeft);
          var feature = OpenXRSettings.Instance.GetFeature<ViveHandTracking>();
-         feature.
          //feature.
+         //feature.
+         
         leftHandRootPose = TestHandData.leftRoot;
         rightHandRootPose = TestHandData.rightRoot;
         for (int jointIndex = 0; jointIndex < TestHandData.jointsInLayout.Length; ++jointIndex)
@@ -111,29 +113,4 @@ class ViveOpenxrHandProvider : XRHandSubsystemProvider
 }
 
 
-
-/*
-public class ViveOpenxrHandProvider : XRHandSubsystemProvider
-{
-    public override RuntimeEnableMode GetAvailability()
-    {
-        return RuntimeEnableMode.Enabled;
-    }
-
-    public override bool Running { get; set; }
-
-    public override void Start()
-    {
-        Running = true;
-    }
-
-    public override void Stop()
-    {
-        Running = false;
-    }
-
-    public override void UpdateTrackingData(XRHand hand, List<XRHandJoint> joints)
-    {
-    }
-}
-*/
+#endif

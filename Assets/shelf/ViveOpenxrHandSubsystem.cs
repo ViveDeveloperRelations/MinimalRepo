@@ -1,3 +1,4 @@
+#if ASINK_TEST
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,3 +18,5 @@ public class ViveOpenxrHandSubsystem : XRHandSubsystem
         XRHandSubsystemDescriptor.Register(handsSubsystemCinfo);
     }
 }
+
+#endif
