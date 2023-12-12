@@ -17,7 +17,8 @@ class ViveOpenxrHandProvider : XRHandSubsystemProvider
 {
     private ViveHandTracking feature = null;
     private XR_EXT_hand_tracking_defs viveHands => XR_EXT_hand_tracking.Interop;
-    
+    private ulong handTracker = 0;
+
     public int numStartCalls { get; private set; }
     public int numStopCalls { get; private set; }
     public int numDestroyCalls { get; private set; }
@@ -31,8 +32,8 @@ class ViveOpenxrHandProvider : XRHandSubsystemProvider
     
     public override void Start()
     {
-        bool isTrackingLeft = XR_EXT_hand_tracking.Interop.GetJointLocations(isLeft: true, handJointLocation: out XrHandJointLocationEXT[] handJointLocationLeft);
-        bool isTrackingRight = XR_EXT_hand_tracking.Interop.GetJointLocations(isLeft: true,handJointLocation: out XrHandJointLocationEXT[] handJointLocationRight);
+        bool isTrackingLeft = viveHands.GetJointLocations(isLeft: true, handJointLocation: out XrHandJointLocationEXT[] handJointLocationLeft);
+        bool isTrackingRight = viveHands.GetJointLocations(isLeft: true,handJointLocation: out XrHandJointLocationEXT[] handJointLocationRight);
         
         leftHandIsTracked = isTrackingLeft;
         rightHandIsTracked = isTrackingRight;
@@ -41,6 +42,8 @@ class ViveOpenxrHandProvider : XRHandSubsystemProvider
 
     public override void Stop()
     {
+        //TODO: check to see if I should be destroying it or if it is appropriate to keep it loaded and let openxr manage it. 
+        //XR_EXT_hand_tracking.Interop.xrDestroyHandTrackerEXT()
         ++numStopCalls;
     }
 
@@ -52,8 +55,11 @@ class ViveOpenxrHandProvider : XRHandSubsystemProvider
     public override void GetHandLayout(NativeArray<bool> jointsInLayout)
     {
         ++numGetHandLayoutCalls;
+        
+        //FIXME: provide actual check instead of relying on our openxr layout
+        //the structure is based on openxr joints and we implment them all based on VIVE.OpenXR.Hand.XrHandJointEXT. this implicitly assumes our openxr version is the same as the one used by the hands subsystem
         for (int jointIndex = 0; jointIndex < jointsInLayout.Length; ++jointIndex)
-            jointsInLayout[jointIndex] = TestHandData.jointsInLayout[jointIndex];
+            jointsInLayout[jointIndex] = true;
     }
 
     public override XRHandSubsystem.UpdateSuccessFlags TryUpdateHands(
@@ -65,7 +71,11 @@ class ViveOpenxrHandProvider : XRHandSubsystemProvider
     {
         mostRecentUpdateType = updateType;
         ++numTryUpdateHandsCalls;
-
+        
+         viveHands.GetJointLocations(isLeft: true, handJointLocation: out XrHandJointLocationEXT[] handJointLocationLeft);
+         var feature = OpenXRSettings.Instance.GetFeature<ViveHandTracking>();
+         feature.
+         //feature.
         leftHandRootPose = TestHandData.leftRoot;
         rightHandRootPose = TestHandData.rightRoot;
         for (int jointIndex = 0; jointIndex < TestHandData.jointsInLayout.Length; ++jointIndex)
